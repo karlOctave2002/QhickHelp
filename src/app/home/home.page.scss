@@ -13,15 +13,30 @@
   line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
+.round-button {
+  border-radius: 200%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 
-  margin: 0;
+  cursor: pointer;
+  border: none;
+  
 }
 
-#container a {
-  text-decoration: none;
-}
+
+ion-button {
+  --border-radius: 170px;
+ }
+ 
+ ion-button.round,
+ ion-button[size='default'].round {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  width: 300px;
+  height: 300px;
+ }
