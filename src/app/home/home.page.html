@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start" >
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
@@ -9,18 +9,28 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
-  
-
   <div id="container">
-    <!--strong>Ready to create an app?</strong-->
-   
+    <div *ngIf="errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
     
+    <div *ngIf="!errorMessage && location && weather">
+      <h2>Ubicación:</h2>
+
+      <p>COMUNA: {{ location.address.city || location.address.neighborhood }}</p>
+      <p>DIRECCION: {{ location.address.road }} {{ location.address.house_number }}</p>
+
+      <h2>Temperatura Actual:</h2>
+      <p>{{ weather.main.temp }} °C</p>
+    </div>
+  
+    <div *ngIf="!errorMessage && (!location || !weather)">
+      <p>Cargando...</p>
+    </div>
+  
     <ion-button class="round">
       <span class="button-text">Activar Emergencia</span>
     </ion-button>
-     
   </div>
-  
 </ion-content>
