@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ContactoPageRoutingModule } from './contacto-routing.module';
 
 import { ContactoPage } from './contacto.page';
-import { ButonAgregarComponent } from '../buton-agregar/buton-agregar.component';
+
 
 @NgModule({
   imports: [
@@ -16,6 +16,6 @@ import { ButonAgregarComponent } from '../buton-agregar/buton-agregar.component'
     IonicModule,
     ContactoPageRoutingModule
   ],
-  declarations: [ContactoPage, ButonAgregarComponent]
+  declarations: [ContactoPage]
 })
 export class ContactoPageModule {}

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>NSContactsUsageDescription</key>
-	<string>To Allow acces to the Contact list</string>
+    <string>Esta aplicación necesita acceder a tus contactos para seleccionarlos como contactos de emergencia. </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

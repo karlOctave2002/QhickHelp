@@ -1,3 +1,8 @@
+ion-button.round {
+  color: #ff5733; /* Cambia este valor al color deseado */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
 #container {
   text-align: center;
 
@@ -31,8 +36,9 @@
 
 ion-button {
   --border-radius: 170px;
+  color: #ff5733;
  }
- 
+
  ion-button.round,
  ion-button[size='default'].round {
   --padding-start: 8px;
@@ -40,3 +46,16 @@ ion-button {
   width: 300px;
   height: 300px;
  }
+ .ion-content {
+  font-family: Arial, sans-serif; 
+  background-color: #123456; /* Color de fondo */
+}
+
+
+
+
+
+
+
+
+ 
