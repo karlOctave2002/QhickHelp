@@ -2,17 +2,25 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Geolocation } from '@capacitor/geolocation';
 import { ToastController } from '@ionic/angular';
+<<<<<<< HEAD
 import { Clima } from '../home/interfaces/clima.interfaces';
+=======
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiClimaService {
   private apiKey = 'b4d67ef135013461006cb1613ff59253'; 
+<<<<<<< HEAD
   url: string =  `https://api.openweathermap.org/data/2.5/weather?lat=50&lon=50&appid=b4d67ef135013461006cb1613ff59253&units=metric`
 
   constructor(private http: HttpClient, 
     private toastController: ToastController) {}
+=======
+
+  constructor(private http: HttpClient, private toastController: ToastController) {}
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 
   async getLocationAndWeather() {
     try {
@@ -63,9 +71,13 @@ export class ApiClimaService {
       throw error;
     }
   }
+<<<<<<< HEAD
 
   obtenerClima(){
     return this.http.get<Clima>(this.url);
   }
 }
 
+=======
+}
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15

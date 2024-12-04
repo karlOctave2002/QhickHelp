@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+<<<<<<< HEAD
 import { ContactService } from './contact.service';
 import { Storage } from '@ionic/storage-angular'; // Importa el Storage de Ionic
 
@@ -9,11 +10,16 @@ const mockStorage = jasmine.createSpyObj('Storage', ['set', 'get', 'remove', 'cr
 mockStorage.set.and.returnValue(Promise.resolve());
 mockStorage.get.and.returnValue(Promise.resolve([]));
 mockStorage.create.and.returnValue(Promise.resolve(mockStorage));
+=======
+
+import { ContactService } from './contact.service';
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 
 describe('ContactService', () => {
   let service: ContactService;
 
   beforeEach(() => {
+<<<<<<< HEAD
     TestBed.configureTestingModule({
       providers: [
         ContactService, // Proveemos el servicio ContactService
@@ -22,12 +28,16 @@ describe('ContactService', () => {
     });
     
     // Inyectamos el servicio
+=======
+    TestBed.configureTestingModule({});
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
     service = TestBed.inject(ContactService);
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+<<<<<<< HEAD
 
   it('debería guardar los contactos seleccionados', async () => {
     const selectedContacts = [{ name: 'Jane Doe', phone: '987654' }];
@@ -43,4 +53,6 @@ describe('ContactService', () => {
     const contacts = await service.getSavedContacts();
     expect(contacts).toEqual([]); // Se espera que el método `getSavedContacts` retorne un array vacío
   });
+=======
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 });

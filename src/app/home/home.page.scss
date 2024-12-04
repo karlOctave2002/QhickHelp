@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+ion-button.round {
+  color: #ff5733; /* Cambia este valor al color deseado */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 #container {
   text-align: center;
 
@@ -31,12 +39,19 @@
 
 ion-button {
   --border-radius: 170px;
+<<<<<<< HEAD
  }
  
+=======
+  color: #ff5733;
+ }
+
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
  ion-button.round,
  ion-button[size='default'].round {
   --padding-start: 8px;
   --padding-end: 8px;
+<<<<<<< HEAD
   width: 200px;
   height: 200px;
  }
@@ -69,3 +84,21 @@ ion-button {
   color: rgba(0, 0, 0, 0.5);
 }
 
+=======
+  width: 300px;
+  height: 300px;
+ }
+ .ion-content {
+  font-family: Arial, sans-serif; 
+  background-color: #123456; /* Color de fondo */
+}
+
+
+
+
+
+
+
+
+ 
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15

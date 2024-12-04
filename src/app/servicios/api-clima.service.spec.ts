@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+<<<<<<< HEAD
 import { ApiClimaService } from './api-clima.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { mockClima } from '../home/mocks/wheater.mocks'; // Asegúrate de que el mock sea correcto
@@ -21,11 +22,23 @@ describe('ApiClimaService', () => {
     });
 
     service = TestBed.inject(ApiClimaService); // Inyección del servicio usando TestBed
+=======
+
+import { ApiClimaService } from './api-clima.service';
+
+describe('ApiClimaService', () => {
+  let service: ApiClimaService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(ApiClimaService);
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+<<<<<<< HEAD
 
   it('deberia obtener la temperatura actual', (done: DoneFn) => {
     // Mock de la respuesta de la API
@@ -42,4 +55,6 @@ describe('ApiClimaService', () => {
       error: done.fail
     });
   });
+=======
+>>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 });
