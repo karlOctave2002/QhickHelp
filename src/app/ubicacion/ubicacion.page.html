@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-toolbar class="quick">
+    
+      <ion-title class="help" >Mi Ubicación</ion-title >
+    
+   </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <google-map [height]="'100vh'" [width]="'100%'"
+                [center]="{ lat: latitude, lng: longitude }"
+                [zoom]="12">
+      <map-marker [position]="{ lat: latitude, lng: longitude }"></map-marker>
+    </google-map>
+  </ion-content>
+  
+</ion-content>
+

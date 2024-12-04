@@ -1,0 +1,73 @@
+
+
+  .call-button{
+    margin-right: 10px; 
+  }
+ /* Botón flotante */
+ion-fab {
+  z-index: 10;
+}
+
+/* Botón para guardar contactos seleccionados */
+.save-button {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  --background: #4caf50; /* Verde */
+  --background-hover: #45a049;
+  --color: white;
+}
+
+/* Estilo de la lista */
+ion-list {
+  margin: 20px;
+}
+
+ion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+ion-fab-button {
+  font-size: 24px;
+  color: white;
+  margin-top: -150px; 
+  width: 80px; 
+  height: 80px; 
+  margin-left: -20px; 
+}
+
+ion-fab-button ion-icon {
+  font-size: 48px; 
+}
+
+ion-button {
+  margin: 5px;
+}
+
+.large-avatar {
+  --width: 120px;
+  --height: 120px;
+}
+
+.quick {
+  display: flex;
+  justify-content: center;
+  width: 150px; 
+  height: 40px;
+  align-items: center; 
+  border-radius: 100px; 
+  background-color: #ffffff; 
+  color: #000000; 
+  font-size: 16px; 
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+
+}
+
+.help  {
+  font-size: 20px; 
+  font-weight: bold; 
+  margin: 0; 
+} 

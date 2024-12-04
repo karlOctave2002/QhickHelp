@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-toolbar class="quick">
+    
+      <ion-title class="help" >Contactos</ion-title >
+    
+   </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Lista de contactos guardados -->
+  <ion-list>
+    <ion-item *ngFor="let contact of savedContacts">
+      <ion-avatar slot="start" class="large-avatar">
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ contact.name }}</h2>
+        <p>{{ contact.phone }}</p>
+      </ion-label>
+      <ion-button color="danger" fill="clear" (click)="confirmDelete(contact)">
+        🗑️
+      </ion-button>
+      <ion-button fill="clear" (click)="selectFavorite(contact)">
+        <ion-icon [name]="favoriteContact?.phone === contact.phone ? 'star' : 'star-outline'" color="warning"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botón flotante para cargar contactos del dispositivo -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="loadDeviceContacts()">
+      <ion-icon name="add"></ion-icon> <!-- Usando un ícono de Ionicons -->
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

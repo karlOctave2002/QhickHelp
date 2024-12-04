@@ -1,0 +1,15 @@
+<ion-footer>
+  <ion-toolbar>
+    <div class="container">
+    <ion-button routerLink="/home"  fill="solid"   class="footer-btn"  (click)="setActiveTab('home')" [color]="activeTab==='home'? 'primary':'light'">
+      <ion-icon name="home"  ></ion-icon>
+      Inicio</ion-button> 
+    <ion-button routerLink="/contacto"  fill="solid" class="footer-btn" (click)="setActiveTab('people')" [color]="activeTab==='people'? 'primary':'light'">
+      <ion-icon name="people"></ion-icon>
+      Contactos</ion-button>
+      <ion-button routerLink="/ubicacion"  fill="solid" class="footer-btn" (click)="setActiveTab('location-outline')" [color]="activeTab==='location-outline'? 'primary':'light'" >
+        <ion-icon name="location-outline"></ion-icon>
+        Ubicación</ion-button>
+    </div>    
+  </ion-toolbar>
+</ion-footer>
