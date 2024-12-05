@@ -24,7 +24,7 @@ android {
     }
 }
 
-<<<<<<< HEAD
+
 ext {
     compileSdkVersion = 30
     minSdkVersion = 21
@@ -32,8 +32,7 @@ ext {
 }
 
 
-=======
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
+
 repositories {
     flatDir{
         dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'

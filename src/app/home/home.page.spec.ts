@@ -2,11 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
-<<<<<<< HEAD
 import { ApiClimaService } from '../servicios/api-clima.service';
-import { ApiServiceMock } from './interfaces/climaService.mocks';
-=======
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
+import { ApiServiceMock } from './interfaces/climaService.mocks'; // Asegúrate de que esta importación esté correcta
 
 describe('HomePage', () => {
   let component: HomePage;
@@ -15,12 +12,8 @@ describe('HomePage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [HomePage],
-<<<<<<< HEAD
       imports: [IonicModule.forRoot()],
-      providers: [[{ provide: ApiClimaService, useValue: ApiServiceMock }]]
-=======
-      imports: [IonicModule.forRoot()]
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
+      providers: [{ provide: ApiClimaService, useValue: ApiServiceMock }] // Aquí se utiliza el mock del servicio
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);

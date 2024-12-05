@@ -13,11 +13,9 @@ export class HomePage implements OnInit {
 
   constructor(private apiClimaService: ApiClimaService) {}
 
-<<<<<<< HEAD
   
 
-=======
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
+
   async ngOnInit() {
     try {
       const data = await this.apiClimaService.getLocationAndWeather();
@@ -27,7 +25,7 @@ export class HomePage implements OnInit {
       console.error('Error obteniendo la ubicación o el clima:', error);
       this.errorMessage = 'No se pudo obtener la información. Verifique permisos y conexión a internet.';
     }
-<<<<<<< HEAD
+
 
     this.apiClimaService.obtenerClima().subscribe({
       next: () =>{
@@ -37,7 +35,7 @@ export class HomePage implements OnInit {
     });
   }
   
-=======
+
   }
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
-}
+
+

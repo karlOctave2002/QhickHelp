@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-=======
-ion-button.round {
-  color: #ff5733; /* Cambia este valor al color deseado */
-  color: white; /* Cambia el color del texto si es necesario */
-}
-
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
 #container {
   text-align: center;
 
@@ -39,31 +31,24 @@ ion-button.round {
 
 ion-button {
   --border-radius: 170px;
-<<<<<<< HEAD
  }
  
-=======
-  color: #ff5733;
- }
-
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
  ion-button.round,
  ion-button[size='default'].round {
   --padding-start: 8px;
   --padding-end: 8px;
-<<<<<<< HEAD
   width: 200px;
   height: 200px;
  }
  
 
- .quickhelp-bar {
+ .quickhelp {
   display: flex;
   justify-content: center;
-  width: 150px; 
+  width: 300px; 
   height: 40px;
   align-items: center; 
-  border-radius: 100px; 
+  border-radius: 200px; 
   background-color: #ffffff; 
   color: #000000; 
   font-size: 16px; 
@@ -73,8 +58,8 @@ ion-button {
 
 }
 
-.quickhelp  {
-  font-size: 20px; 
+.help  {
+  font-size: 18px; 
   font-weight: bold; 
   margin: 0; 
 }
@@ -84,21 +69,3 @@ ion-button {
   color: rgba(0, 0, 0, 0.5);
 }
 
-=======
-  width: 300px;
-  height: 300px;
- }
- .ion-content {
-  font-family: Arial, sans-serif; 
-  background-color: #123456; /* Color de fondo */
-}
-
-
-
-
-
-
-
-
- 
->>>>>>> a369656037407e5bf87666e491f8948b0d786b15
