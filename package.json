@@ -8,11 +8,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-
     "test": "ng test --code-coverage",
-
- 
-
     "lint": "ng lint"
   },
   "private": true,
@@ -26,6 +22,8 @@
     "@angular/platform-browser": "^18.2.12",
     "@angular/platform-browser-dynamic": "^18.2.12",
     "@angular/router": "^18.2.12",
+    "@awesome-cordova-plugins/core": "^6.12.0",
+    "@awesome-cordova-plugins/sms": "^6.12.0",
     "@capacitor-community/contacts": "^6.1.1",
     "@capacitor-community/sqlite": "^6.0.2",
     "@capacitor/android": "^6.1.2",
@@ -42,6 +40,7 @@
     "@ionic/angular": "^8.4.0",
     "@ionic/storage": "^4.0.0",
     "@ionic/storage-angular": "^4.0.0",
+    "cordova-sms-plugin": "^1.0.4",
     "ionicons": "^7.0.0",
     "jeep-sqlite": "^2.8.0",
     "rxjs": "~7.8.0",
