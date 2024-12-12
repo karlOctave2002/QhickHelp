@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-toolbar class="quick">
+    
+      <ion-title class="help" >Perfil</ion-title >
+    
+   </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf="!userProfile">
+    <div class="form-card">
+      <form #profileForm="ngForm" (ngSubmit)="saveProfile(profileForm)">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" name="nombre" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input type="text" name="apellido" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Teléfono</ion-label>
+          <ion-input type="tel" name="telefono" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Gmail</ion-label>
+          <ion-input type="email" name="gmail" ngModel required></ion-input>
+        </ion-item>
+        <ion-button expand="full" type="submit" [disabled]="!profileForm.form.valid" class="save-button">
+          Guardar Perfil
+        </ion-button>
+      </form>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="userProfile">
+    <div class="profile-card">
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-text>{{ userProfile.nombre }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Apellido</ion-label>
+        <ion-text>{{ userProfile.apellido }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Teléfono</ion-label>
+        <ion-text>{{ userProfile.telefono }}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gmail</ion-label>
+        <ion-text>{{ userProfile.gmail }}</ion-text>
+      </ion-item>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="fab-button">
+      <ion-fab-button (click)="editProfile()">
+        <ion-icon name="create"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
+</ion-content>

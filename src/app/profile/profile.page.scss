@@ -1,0 +1,61 @@
+ion-header {
+    --background: #6200ea; /* Color de fondo morado oscuro */
+    --color: white; /* Texto en color blanco */
+  }
+  
+  ion-toolbar {
+    --background: transparent;
+    --color: white;
+  }
+  
+  ion-content {
+    --background: #f8f9fa; /* Fondo gris claro */
+  }
+  
+  .form-card {
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .profile-card {
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-card ion-item {
+    --background: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card ion-label {
+    font-weight: bold;
+  }
+  
+  .fab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+    width: 100%;
+    background: #6200ea; /* Color del botón morado oscuro */
+    color: white;
+  }
+  
+  .save-button:hover {
+    background: #7e3ff2; /* Color del botón al pasar el mouse */
+  }
+  

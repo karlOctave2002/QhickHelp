@@ -31,6 +31,12 @@ export class MenuComponent  implements OnInit {
         "optionName": "Ubicación"
 
       },
+      {
+        "url": "/profile",
+        "iconName": "person",
+        "optionName": "Profile"
+
+      },
     ]
   }
 
