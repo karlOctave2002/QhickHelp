@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Historial de Emergencias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1"><strong>#</strong></ion-col>
+      <ion-col size="3"><strong>Fecha</strong></ion-col>
+      <ion-col size="5"><strong>Ubicación</strong></ion-col>
+      <ion-col size="3"><strong>Estado</strong></ion-col>
+    </ion-row>
+    <ng-container *ngFor="let entry of historial; let i = index">
+      <ion-row>
+        <ion-col size="1">{{ i + 1 }}</ion-col>
+        <ion-col size="3">{{ entry.fecha }}</ion-col>
+        <ion-col size="5">{{ entry.ubicacion }}</ion-col>
+        <ion-col size="3">
+          <span [ngClass]="entry.estado === 'EXITOSO' ? 'success' : 'failed'">{{ entry.estado }}</span>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+  </ion-grid>
+</ion-content>

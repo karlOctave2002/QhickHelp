@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiClimaService } from '../servicios/api-clima.service';
 import { SMS } from '@awesome-cordova-plugins/sms/ngx';
+import { CallNumber } from '@awesome-cordova-plugins/call-number/ngx';
+import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
 
 @NgModule({
   imports: [
@@ -18,6 +20,6 @@ import { SMS } from '@awesome-cordova-plugins/sms/ngx';
     HttpClientModule
   ],
   declarations: [HomePage],
-  providers: [ApiClimaService, SMS]
+  providers: [ApiClimaService, SMS, CallNumber, AndroidPermissions]
 })
 export class HomePageModule {}

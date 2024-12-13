@@ -1,0 +1,27 @@
+ion-grid {
+    padding: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  ion-row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  ion-col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .failed {
+    color: red;
+    font-weight: bold;
+  }
+  
